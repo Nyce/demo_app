@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Name: MyString
+  Status: MyString
+  Salary: 1
+  PayBasis: MyString
+  PositionTitle: MyString
+
+two:
+  Name: MyString
+  Status: MyString
+  Salary: 1
+  PayBasis: MyString
+  PositionTitle: MyString

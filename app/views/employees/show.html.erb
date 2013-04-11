@@ -1,0 +1,31 @@
+<h1> White House Staff </h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @employee.Name %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @employee.Status %>
+</p>
+
+<p>
+  <b>Salary:</b>
+  <%= @employee.Salary %>
+</p>
+
+<p>
+  <b>Paybasis:</b>
+  <%= @employee.Pay_Basis %>
+</p>
+
+<p>
+  <b>Positiontitle:</b>
+  <%= @employee.Position_Title %>
+</p>
+
+
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>

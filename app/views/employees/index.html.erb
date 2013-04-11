@@ -1,0 +1,34 @@
+<h1> <center>White House Staff</center></h1>
+<h2>Number of Employees: <%= @employees.count %></h2>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Status</th>
+    <th>Salary</th>
+    <th>Pay basis</th>
+    <th>Position title</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @employees.each do |employee| %>
+  <tr>
+    <td><%= employee.ID %></td>
+    <td><%= employee.Name %></td>
+    <td><%= employee.Status %></td>
+    <td><%= employee.Salary %></td>
+    <td><%= employee.Pay_Basis %></td>
+    <td><%= employee.Position_Title %></td>
+    <td><%= link_to 'Show', employee %></td>
+    <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
+    <td><%= link_to 'Destroy', employee, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+
+<br />
+
+<%= link_to 'New Employee', new_employee_path %>
