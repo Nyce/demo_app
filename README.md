@@ -1,4 +1,5 @@
-Author: Niyi ODumosu
+Author: Niyi Odumosu
+
 Date: April 1 - 14 2013
 
 This repo serves as a demo application that I created. It displays all of the current staff of the White House.
